@@ -1,9 +1,16 @@
-<h1> Answer </h1>
+<div class="container">
+  <h1> Answer </h1>
 
 
     <p> <%= @question %> </p>
 
-    <p> <%= @answer %></p>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://imgs.search.brave.com/uH6GYURZzFaxiDDrGLeOUdhHq9Mw0W6V5YL7jckz6F0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODUy/NDAxNzMyL2ZyL3Bo/b3RvL2hldXJldXgt/ZW50cmElQzMlQUVu/ZXVyLXBlcnNvbm5l/bC10cmF2YWlsbGFu/dC0lQzMlQTAtbGEt/c2FsbGUtZGUtZ3lt/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1pQ1JTelJBUjM5/SGR4MzFfSU1uVGhY/VjVEeDVNaFR5OU5P/djFmQ28xallrPQ" class="card-img-top" alt="...">
+      <div class="card-body">
+      <p class="card-text"><%= @answer %> </p>
+      </div>
+    </div>
 
 
 
@@ -13,4 +20,9 @@
 
 
 
-<%= link_to("Ask another question", ask_path) %>
+
+
+
+    <a href="/ask" class="link-info">Ask another question</a>
+
+</div>
